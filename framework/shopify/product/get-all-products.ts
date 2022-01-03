@@ -1,3 +1,4 @@
+import { Product } from '../../common/types/product'
 import { ProductConnection } from '../schema'
 import fetchApi from '../utils/fetch-api'
 import { normalizeProduct } from "../utils/normalize"
@@ -7,7 +8,7 @@ type ReturnType = {
   products: ProductConnection 
 }
 
-export default async function getAllProducts(): Promise<any> {
+export default async function getAllProducts(): Promise<Product[]> {
   const { data } = await fetchApi<ReturnType>({ query: getAllProductsQuery })
   
   // map over edges and return nodes
