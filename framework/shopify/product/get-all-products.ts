@@ -1,5 +1,11 @@
-export default async function getAllProducts(): Promise<string[]> {
-  const products = ["product1", "product2", "product3"]
-  return products
+import fetchApi from '../utils/fetch-api'
+import getAllProductsQuery from "../utils/queries/get-all-products"
+
+
+
+
+export default async function getAllProducts(): Promise<any[]> {
+  const products = await fetchApi({query: getAllProductsQuery})
+  return products.data
 }
 
