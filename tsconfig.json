@@ -18,18 +18,20 @@
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "jsx": "preserve", 
+    "jsx": "preserve",
     "paths": {
-      "@common": ["framework/common"],
+      "@common": [
+        "framework/common"
+      ],
       "@common/*": [
         "framework/common/*"
-      ],  
+      ],
       "@framework": [
         "framework/shopify"
       ],
       "@framework/*": [
         "framework/shopify/*"
-      ],
+      ]
     }
   },
   "include": [
