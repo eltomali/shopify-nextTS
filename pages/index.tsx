@@ -1,3 +1,4 @@
+import { Layout } from "@components/common";
 import { getConfig } from "@framework/api/config";
 import getAllProducts from "@framework/product/get-all-products";
 import type { InferGetStaticPropsType } from "next";
@@ -20,3 +21,6 @@ export default function Home({
 }: InferGetStaticPropsType<typeof getStaticProps>) {
   return <div>{JSON.stringify(products)}</div>;
 }
+
+// This page should use layout
+Home.Layout = Layout;
