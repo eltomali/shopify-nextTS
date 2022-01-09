@@ -2,4 +2,7 @@
   @apply h-full mx-auto;
   /* even wider maxwidth: 2640px */
   max-width: 1800px;
+
+  background-color: theme("colors.green");
+  color: theme("textColor.base");
 }
