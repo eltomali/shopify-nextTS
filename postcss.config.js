@@ -1,8 +1,8 @@
 module.exports = {
-  plugins: ["tailwindcss"],
+  plugins: ["tailwindcss", "autoprefixer"],
 };
 
-//// Just for testing to generate post css output
+// Just for testing to generate post css output
 // module.exports = {
-//   plugins: [require("tailwindcss")],
+//   plugins: [require("tailwindcss"), require("autoprefixer")],
 // };

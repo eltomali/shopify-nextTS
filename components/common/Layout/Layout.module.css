@@ -1,0 +1,5 @@
+.root {
+  @apply h-full mx-auto;
+  /* even wider maxwidth: 2640px */
+  max-width: 1800px;
+}
